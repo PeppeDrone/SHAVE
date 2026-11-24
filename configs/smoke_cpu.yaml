@@ -1,0 +1,12 @@
+# CPU smoke configuration: tiny random model, tiny slices. Plumbing only; never a result.
+inherit: experiment.yaml
+smoke: true
+arms: [muslim_nat, muslim90]
+seeds: [42]
+train: {batch_size: 8, lr: 3.0e-3, n_val_monitor: 16}
+shave: {pool_size: 80, kc: 20, nv: 16, min_value_count: 1, n_base_not: 40, n_pairs: 16, n_side: 40, offsets: 4,
+       grid: full, batch_size: 8}
+dfr: {n_runs: 3, n_scaler_train_rows: 40}
+stats: {n_boot: 200}
+# check: inherited unchanged from experiment.yaml (the check's thresholds are read from the config)
+exclusion: {auroc_min: 0.0, acc_min: 0.0, shortcut_gap_min: -1.0}   # tiny random model: rule runs, nothing is excluded

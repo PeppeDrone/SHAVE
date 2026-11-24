@@ -1,0 +1,21 @@
+# Pinned versions used for the paper. # torch is installed separately by scripts/setup_env.sh (torch==2.8.0 from the cu128 or cpu index).
+transformers==5.22.2
+peft==0.21.2
+accelerate==1.15.0
+tokenizers==0.23.3
+safetensors==0.8.0
+huggingface-hub==2.4.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.1.1
+pyarrow==26.0.1
+regex==2026.11.9
+PyYAML==6.0.3
+tqdm==4.66.5
+matplotlib==3.11.2
+requests==2.34.2
+# LEACE (Belrose et al. 2023), official implementation, MIT licence
+concept-erasure==0.2.4
+# tests
+pytest==9.2.0

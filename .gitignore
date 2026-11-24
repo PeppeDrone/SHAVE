@@ -1,0 +1,46 @@
+# run outputs and caches (see README)
+runs/
+cache/
+results/*
+!results/README.md
+aggregate/
+figures/
+logs/
+hf_cache/
+*_cache/
+.cache/
+# data and model files are downloaded by script, never committed
+data/
+*.csv.gz
+*.tar.gz
+*.tgz
+*.tar
+*.safetensors
+*.bin
+*.pt
+*.npy
+*.parquet
+# environments
+.venv*/
+venv/
+env/
+# secrets
+.secrets/
+.env
+*_token
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.toc
